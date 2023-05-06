@@ -3,6 +3,9 @@ import { useState } from "react";
 import * as S from "../Styled";
 /* global BigInt */
 
+
+
+
 function Input() {
   // 입력을 받을 상태값
   const [price, setPrice] = useState(0);
