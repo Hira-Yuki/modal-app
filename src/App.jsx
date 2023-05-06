@@ -42,7 +42,6 @@ function App() {
     } else {
       alert(`{name: ${name}}, price: ${price}}`);
     }
-
   };
 
   // useState를 사용하여 open상태를 변경한다. (open일때 true로 만들어 열리는 방식)

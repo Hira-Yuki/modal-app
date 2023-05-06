@@ -6,9 +6,9 @@ function Modal(props) {
 
   return (
     // 모달이 열릴때 openModal 클래스가 생성된다.
-    <div className={open ? "openModal modal" : "modal"}>
+    <S.StModalWrapper className={open ? "openModal modal" : "modal"}>
       {open ? (
-        <section>
+        <S.StModalSection>
           <header>
             {header}
           </header>
@@ -21,9 +21,9 @@ function Modal(props) {
               확인
             </S.StMediumPrimaryButton>
           </footer>
-        </section>
+        </S.StModalSection>
       ) : null}
-    </div>
+    </S.StModalWrapper>
   );
 }
 
