@@ -20,7 +20,7 @@ function App() {
   const closeModal2 = () => setModal2Open(false);
 
   return (
-    <div>
+    <>
       <Button />
       <Input />
       <h2>Modal</h2>
@@ -42,24 +42,24 @@ function App() {
         <h2>Select</h2>
         <div>
           <div>
+            <div> "Select"
+              <div>자바스크립트</div>
+              <div>리엑트</div>
+              <div>리엑트 네이티브</div>
+              <div>스프링</div>
+            </div>
+          </div>
+          {/* <div>
             <select>
               <option>자바스크립트</option>
               <option>리엑트</option>
               <option>리엑트 네이티브</option>
               <option>스프링</option>
             </select>
-          </div>
-          <div>
-            <select>
-              <option>자바스크립트</option>
-              <option>리엑트</option>
-              <option>리엑트 네이티브</option>
-              <option>스프링</option>
-            </select>
-          </div>
+          </div> */}
         </div>
       </S.StSelectDiv>
-    </div>
+    </>
   );
 }
 

@@ -77,7 +77,7 @@ export const StSelectDiv = styled.div`
 
 
 // 모달 영역의 css 
-export const StModalShow = keyframes`
+const StModalShow = keyframes`
   from {
     opacity: 0;
     margin-top: -50px;
@@ -88,7 +88,7 @@ export const StModalShow = keyframes`
   }
 `;
 
-export const StModalBgShow = keyframes`
+const StModalBgShow = keyframes`
   from {
     opacity: 0;
   }
@@ -128,18 +128,6 @@ export const StModalSection = styled.section`
     padding: 16px 64px 16px 16px;
     background-color: #f1f1f1;
     font-weight: 700;
-
-    /* > button {
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      width: 30px;
-      font-size: 21px;
-      font-weight: 700;
-      text-align: center;
-      color: #999;
-      background-color: transparent;
-    } */
   }
 
   > main {
@@ -151,16 +139,5 @@ export const StModalSection = styled.section`
   > footer {
     padding: 12px 16px;
     text-align: right;
-
-    /* > button {
-      padding: 6px 12px;
-      color: #fff;
-      background-color: #6c757d;
-      border-radius: 5px;
-      font-size: 13px;
-      cursor: pointer;
-      border: 0;
-      outline: none;
-    } */
   }
 `;
