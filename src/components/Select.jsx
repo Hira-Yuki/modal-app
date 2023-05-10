@@ -51,7 +51,7 @@ function Select() {
       <div>
         <SelectBox onClick={handleDropdownToggle2}>{selectedValue2}</SelectBox>
         {isOpen2 && (
-          <OptionsBox>
+          <OptionsBox2>
             {options.map((item) => {
               return (
                 <OptionBox onClick={() => handleItemClick2(item)}>
@@ -59,7 +59,7 @@ function Select() {
                 </OptionBox>
               );
             })}
-          </OptionsBox>
+          </OptionsBox2>
         )}
       </div>
     </Container>
@@ -87,6 +87,17 @@ const OptionsBox = styled.div`
   border-radius: 4px;
   width: 180px;
   margin: 10px;
+  z-index: 999;
+  margin-top: -30px;
+  background-color: white;
+`;
+
+const OptionsBox2 = styled.div`
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 180px;
+  margin: 10px;
+  background-color: white;
 `;
 
 const OptionBox = styled.div`
