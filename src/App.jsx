@@ -4,6 +4,7 @@ import Button from "./components/Button";
 import Input from "./components/Input";
 import Modal from "./components/Modal";
 import Modal2 from "./components/Modal2";
+import Select from "./components/Select";
 import * as S from "./Styled";
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
   const closeModal2 = () => setModal2Open(false);
 
   return (
-    <>
+    <div>
       <Button />
       <Input />
       <h2>Modal</h2>
@@ -38,28 +39,14 @@ function App() {
           2번 모달의 내용
         </Modal2>
       </div>
+      <div id="portal-container">
       <S.StSelectDiv>
         <h2>Select</h2>
-        <div>
-          <div>
-            <div> "Select"
-              <div>자바스크립트</div>
-              <div>리엑트</div>
-              <div>리엑트 네이티브</div>
-              <div>스프링</div>
-            </div>
-          </div>
-          {/* <div>
-            <select>
-              <option>자바스크립트</option>
-              <option>리엑트</option>
-              <option>리엑트 네이티브</option>
-              <option>스프링</option>
-            </select>
-          </div> */}
-        </div>
+        <Select />
       </S.StSelectDiv>
-    </>
+      </div>
+      
+    </div>
   );
 }
 

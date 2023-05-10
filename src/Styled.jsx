@@ -73,6 +73,7 @@ export const StInput = styled.input`
 export const StSelectDiv = styled.div`
   border: 5px solid gray;
   overflow: hidden;
+  height: 150px;
 `;
 
 
