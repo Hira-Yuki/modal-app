@@ -86,6 +86,7 @@ const OptionsBox = styled.div`
   border: 1px solid #ccc;
   border-radius: 4px;
   width: 180px;
+  margin: 10px;
 `;
 
 const OptionBox = styled.div`
